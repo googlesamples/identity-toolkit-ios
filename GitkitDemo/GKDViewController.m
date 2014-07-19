@@ -45,7 +45,16 @@
     didFinishSignInWithToken:(NSString *)token
                      account:(GITAccount *)account
                        error:(NSError *)error {
-  NSLog(@"token: %@, account: %@", token, account);
+
+  if (!error) {
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Login Success" message:[NSString stringWithFormat:@"Name: %@\nEmail: %@\nUser ID: %@\nProvider: %@", account.displayName, account.email, account.localID, account.providerID] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    NSLog(@"token: %@, account: %@", token, account);
+  } else {
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    NSLog(@"error %@", error);
+  }
 }
 
 @end
