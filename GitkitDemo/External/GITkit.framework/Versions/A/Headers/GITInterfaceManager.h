@@ -5,7 +5,6 @@
 //  Copyright (c) 2014 Google Inc. All rights reserved.
 //
 
-
 #import <UIKit/UIKit.h>
 
 @class GITAccount;
