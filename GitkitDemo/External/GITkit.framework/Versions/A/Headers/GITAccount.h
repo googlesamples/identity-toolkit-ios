@@ -46,8 +46,8 @@ extern NSString * const kGITAccountProviderIDKey;
 - (instancetype)initWithUserAttributes:(NSDictionary *)dict;
 
 /**
- * @return An NSDictionary that has all user attributes keyed by localID, email, displayName,
-*          and photoURL.
+ * Returns an NSDictionary that has all user attributes keyed by localID, email, displayName,
+ * and photoURL.
  */
 - (NSDictionary *)userAttributes;
 

@@ -1,0 +1,60 @@
+/*
+ *
+ * Copyright 2014 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+//  GKDCustomLegacySignInViewController.m
+//  GitkitDemo
+
+#import "GKDCustomLegacySignInViewController.h"
+
+#import <GITkit/GITkit.h>
+
+@interface GKDCustomLegacySignInViewController ()
+@property (copy, nonatomic) NSString *email;
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@end
+
+@implementation GKDCustomLegacySignInViewController
+
+- (instancetype)initWithEmail:(NSString *)email {
+  self = [super init];
+  if (self) {
+    _email = email;
+  }
+  return self;
+}
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  
+  self.emailField.text = self.email;
+}
+
+- (IBAction)signInButtonDidTap:(id)sender {
+  [[GITAuth sharedInstance] verifyPassword:self.passwordField.text
+                                  forEmail:self.emailField.text
+                           invalidCallback:^{
+                             // Handle wrong password here.
+                             [[[UIAlertView alloc] initWithTitle:@"Error"
+                                                         message:@"Wrong password!"
+                                                        delegate:nil
+                                               cancelButtonTitle:@"OK"
+                                               otherButtonTitles:nil] show];
+                             self.passwordField.text = @"";
+                           }];
+}
+
+@end
