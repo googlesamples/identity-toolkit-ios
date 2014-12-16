@@ -8,5 +8,5 @@
 #import "GITAccount.h"
 #import "GITAuth.h"
 #import "GITClient.h"
-#import "GITIdToken.h"
+#import "GITIDToken.h"
 #import "GITInterfaceManager.h"

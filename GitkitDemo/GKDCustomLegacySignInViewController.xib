@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GKDCustomLegacySignInViewController">
+            <connections>
+                <outlet property="emailField" destination="4hG-KR-dmn" id="BbQ-4a-E5i"/>
+                <outlet property="passwordField" destination="N9N-VR-9fA" id="hdj-S8-WGD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZgO-Db-UVV">
+                    <rect key="frame" x="180" y="50" width="240" height="146"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-KR-dmn">
+                            <rect key="frame" x="20" y="20" width="200" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="2rJ-RO-bvb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N9N-VR-9fA">
+                            <rect key="frame" x="20" y="58" width="200" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="oJL-fo-yCB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-sM-KG7">
+                            <rect key="frame" x="171" y="96" width="49" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Sign In">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="signInButtonDidTap:" destination="-1" eventType="touchUpInside" id="jKW-8M-GEl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="E0q-sM-KG7" firstAttribute="top" secondItem="N9N-VR-9fA" secondAttribute="bottom" constant="8" symbolic="YES" id="K71-xS-F1x"/>
+                        <constraint firstItem="N9N-VR-9fA" firstAttribute="top" secondItem="4hG-KR-dmn" secondAttribute="bottom" constant="8" symbolic="YES" id="MjK-qD-vc8"/>
+                        <constraint firstAttribute="trailing" secondItem="4hG-KR-dmn" secondAttribute="trailing" constant="20" symbolic="YES" id="SUg-tN-Byc"/>
+                        <constraint firstItem="4hG-KR-dmn" firstAttribute="top" secondItem="ZgO-Db-UVV" secondAttribute="top" constant="20" symbolic="YES" id="TcF-33-YV7"/>
+                        <constraint firstAttribute="trailing" secondItem="N9N-VR-9fA" secondAttribute="trailing" constant="20" symbolic="YES" id="YSF-HQ-iov"/>
+                        <constraint firstItem="N9N-VR-9fA" firstAttribute="leading" secondItem="ZgO-Db-UVV" secondAttribute="leading" constant="20" symbolic="YES" id="ZQk-Kq-lJb"/>
+                        <constraint firstAttribute="bottom" secondItem="E0q-sM-KG7" secondAttribute="bottom" constant="20" symbolic="YES" id="Zzf-bm-Acz"/>
+                        <constraint firstAttribute="trailing" secondItem="E0q-sM-KG7" secondAttribute="trailing" constant="20" symbolic="YES" id="agp-NO-68I"/>
+                        <constraint firstItem="4hG-KR-dmn" firstAttribute="leading" secondItem="ZgO-Db-UVV" secondAttribute="leading" constant="20" symbolic="YES" id="eIi-5V-v6w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="ZgO-Db-UVV" secondAttribute="centerX" id="2hE-gv-uvF"/>
+                <constraint firstItem="ZgO-Db-UVV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="TDd-2H-lap"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

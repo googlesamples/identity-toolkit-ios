@@ -10,6 +10,9 @@
 @class GITAccount;
 @protocol GITInterfaceManagerDelegate;
 
+/**
+ * Manages the Identity Toolkit user interface logic.
+ */
 @interface GITInterfaceManager : NSObject
 
 /**
@@ -21,7 +24,7 @@
 @property(nonatomic, weak) id<GITInterfaceManagerDelegate> delegate;
 
 /**
- * @return a UIViewController for account management.
+ * Returns a UIViewController for account management.
  */
 + (UIViewController *)manageAccountController;
 
@@ -101,16 +104,23 @@
 - (UIViewController *)legacySignUpControllerWithEmail:(NSString *)email;
 
 /**
- * Sent to the receiver to find the account linking view controller.
+ * Sent to the receiver to find the account linking view controller for federated user.
  *
- * If this method is not implemented, a default implemtation will be used. The UI looks
- * different for federated user and password user.
+ * If this method is not implemented, a default implemtation will be used.
  *
  * @param unverifiedProvider The provider ID of an IdP to be verified.
- * @param verifiedProvider The provider ID of an IdP the user has previously signed in with,
- *                         |nil| for password user.
+ * @param verifiedProvider The provider ID of an IdP the user has previously signed in with.
  */
 - (UIViewController *)accountLinkingControllerWithUnverifiedProvider:(NSString *)unverifiedProvider
                                                     verifiedProvider:(NSString *)verifiedProvider;
+
+/**
+ * Sent to the receiver to find the account linking view controller for password user.
+ *
+ * If this method is not implemented, a default implemtation will be used.
+ *
+ * @param unverifiedProvider The provider ID of an IdP to be verified.
+ */
+- (UIViewController *)accountLinkingControllerWithUnverifiedProvider:(NSString *)unverifiedProvider;
 
 @end

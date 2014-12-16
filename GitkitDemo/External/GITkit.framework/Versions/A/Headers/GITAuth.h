@@ -68,6 +68,24 @@
             displayName:(NSString *)displayName
                password:(NSString *)password;
 
+/**
+ * Starts account linking for a federated account. The user will be send to system browser to
+ * finish the linking process.
+ *
+ * @param toProvider The provider ID of an IdP to be verified.
+ * @param fromProvider The provider ID of an IdP the user has previously signed in with.
+ */
+- (void)linkAccountToProviderID:(NSString *)toProvider fromProviderID:(NSString *)fromProvider;
+
+/**
+ * Starts account linking for a password account. The password should have been collected from the
+ * user before calling this method.
+ *
+ * @param password The password collect from the user, which is to be verified.
+ * @param invalidCallback Block called when the password is invalid.
+ */
+- (void)linkAccountWithPassword:(NSString *)password invalidCallback:(void (^)())invalidCallback;
+
 @end
 
 @protocol GITAuthDelegate<NSObject>

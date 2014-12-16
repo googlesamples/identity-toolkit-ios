@@ -27,12 +27,18 @@ extern NSString * const kGITProviderAOL;
 typedef enum {
   /** Default error code. */
   kGITErrorCodeUnknown = -1,
+  /** User cancels authentication. */
+  kGITErrorCodeUserCancellation = -100,
   /** The email asserted by IdP does not match the user input email. */
   kGITErrorCodeEmailMismatch = -200,
   /** The email to sign up already exists. */
   kGITErrorCodeEmailExists = -201,
   /** Unexpected response from GITkit API. */
   kGITErrorCodeApiUnexpectedResponse = -300,
+  /** Insecure (non-HTTPS) request, which cannot be authorized. */
+  kGITErrorCodeInsecureRequest = -400,
+  /** GetToken failure. */
+  kGITErrorCodeGetTokenFailure = -401,
 } GITErrorCode;
 
 /**

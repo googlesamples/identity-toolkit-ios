@@ -21,7 +21,13 @@
 
 #import <GITkit/GITkit.h>
 
-@interface GKDViewController () <GITClientDelegate>
+#import "GKDCustomFederatedAccountLinkingViewController.h"
+#import "GKDCustomLegacySignInViewController.h"
+#import "GKDCustomLegacySignUpViewController.h"
+#import "GKDCustomLegacyAccountLinkingViewController.h"
+#import "GKDCustomNascarViewController.h"
+
+@interface GKDViewController () <GITClientDelegate, GITInterfaceManagerDelegate>
 
 @end
 
@@ -32,12 +38,13 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
+  _interfaceManager = [[GITInterfaceManager alloc] init];
+  _interfaceManager.delegate = self;
   [GITClient sharedInstance].delegate = self;
 }
 
 - (IBAction)signInDidTap:(id)sender {
   NSLog(@"Sign in button tapped");
-  _interfaceManager = [[GITInterfaceManager alloc] init];
   [_interfaceManager startSignIn];
 }
 
@@ -47,14 +54,55 @@
                        error:(NSError *)error {
 
   if (!error) {
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Login Success" message:[NSString stringWithFormat:@"Name: %@\nEmail: %@\nUser ID: %@\nProvider: %@", account.displayName, account.email, account.localID, account.providerID] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    NSString *message =
+        [NSString stringWithFormat:@"Name: %@\nEmail: %@\nUser ID: %@\nProvider: %@",
+         account.displayName, account.email, account.localID, account.providerID];
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Login Success"
+                                                    message:message
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
     [alert show];
     NSLog(@"token: %@, account: %@", token, account);
   } else {
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                    message:[error localizedDescription]
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
     [alert show];
     NSLog(@"error %@", error);
   }
 }
+
+// Uncomment the following code to enable custom UI.
+/*
+#pragma mark GITInterfaceManagerDelegate methods
+
+- (UIViewController *)signInControllerWithAccount:(GITAccount *)account {
+  return [[GKDCustomNascarViewController alloc] init];
+}
+
+- (UIViewController *)legacySignInControllerWithEmail:(NSString *)email {
+  return [[GKDCustomLegacySignInViewController alloc] initWithEmail:email];
+}
+
+- (UIViewController *)legacySignUpControllerWithEmail:(NSString *)email {
+  return [[GKDCustomLegacySignUpViewController alloc] initWithEmail:email];
+}
+
+- (UIViewController *)accountLinkingControllerWithUnverifiedProvider:(NSString *)unverifiedProvider
+                                                    verifiedProvider:(NSString *)verifiedProvider {
+  return [[GKDCustomFederatedAccountLinkingViewController alloc]
+          initWithUnverifiedProvider:unverifiedProvider
+          verifiedProvider:verifiedProvider];
+}
+
+- (UIViewController *)accountLinkingControllerWithUnverifiedProvider:
+(NSString *)unverifiedProvider {
+  return [[GKDCustomLegacyAccountLinkingViewController alloc]
+          initWithUnverifiedProvider:unverifiedProvider];
+}
+*/
 
 @end

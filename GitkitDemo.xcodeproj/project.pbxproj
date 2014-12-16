@@ -12,6 +12,16 @@
 		8E0089341979FA6000ACEC1D /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E00892F1979FA6000ACEC1D /* GoogleOpenSource.framework */; };
 		8E0089351979FA6000ACEC1D /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E0089301979FA6000ACEC1D /* GooglePlus.bundle */; };
 		8E0089361979FA6000ACEC1D /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0089311979FA6000ACEC1D /* GooglePlus.framework */; };
+		8E6028F91A2548C90027D141 /* GKDCustomNascarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6028F71A2548C90027D141 /* GKDCustomNascarViewController.m */; };
+		8E6028FA1A2548C90027D141 /* GKDCustomNascarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6028F81A2548C90027D141 /* GKDCustomNascarViewController.xib */; };
+		8E6028FE1A2555910027D141 /* GKDCustomLegacySignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6028FC1A2555910027D141 /* GKDCustomLegacySignUpViewController.m */; };
+		8E6028FF1A2555910027D141 /* GKDCustomLegacySignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6028FD1A2555910027D141 /* GKDCustomLegacySignUpViewController.xib */; };
+		8E6029031A2559890027D141 /* GKDCustomLegacySignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6029011A2559890027D141 /* GKDCustomLegacySignInViewController.m */; };
+		8E6029041A2559890027D141 /* GKDCustomLegacySignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6029021A2559890027D141 /* GKDCustomLegacySignInViewController.xib */; };
+		8E6029291A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6029241A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.m */; };
+		8E60292A1A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6029251A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.xib */; };
+		8E60292B1A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6029271A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.m */; };
+		8E60292C1A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6029281A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.xib */; };
 		8EFBEB361922F694009E4906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFBEB351922F694009E4906 /* Foundation.framework */; };
 		8EFBEB381922F694009E4906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFBEB371922F694009E4906 /* CoreGraphics.framework */; };
 		8EFBEB3A1922F694009E4906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFBEB391922F694009E4906 /* UIKit.framework */; };
@@ -37,6 +47,21 @@
 		8E00892F1979FA6000ACEC1D /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = GitkitDemo/External/GoogleOpenSource.framework; sourceTree = "<group>"; };
 		8E0089301979FA6000ACEC1D /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = GitkitDemo/External/GooglePlus.bundle; sourceTree = "<group>"; };
 		8E0089311979FA6000ACEC1D /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = GitkitDemo/External/GooglePlus.framework; sourceTree = "<group>"; };
+		8E6028F61A2548C90027D141 /* GKDCustomNascarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDCustomNascarViewController.h; sourceTree = "<group>"; };
+		8E6028F71A2548C90027D141 /* GKDCustomNascarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDCustomNascarViewController.m; sourceTree = "<group>"; };
+		8E6028F81A2548C90027D141 /* GKDCustomNascarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKDCustomNascarViewController.xib; sourceTree = "<group>"; };
+		8E6028FB1A2555910027D141 /* GKDCustomLegacySignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDCustomLegacySignUpViewController.h; sourceTree = "<group>"; };
+		8E6028FC1A2555910027D141 /* GKDCustomLegacySignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDCustomLegacySignUpViewController.m; sourceTree = "<group>"; };
+		8E6028FD1A2555910027D141 /* GKDCustomLegacySignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKDCustomLegacySignUpViewController.xib; sourceTree = "<group>"; };
+		8E6029001A2559890027D141 /* GKDCustomLegacySignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDCustomLegacySignInViewController.h; sourceTree = "<group>"; };
+		8E6029011A2559890027D141 /* GKDCustomLegacySignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDCustomLegacySignInViewController.m; sourceTree = "<group>"; };
+		8E6029021A2559890027D141 /* GKDCustomLegacySignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKDCustomLegacySignInViewController.xib; sourceTree = "<group>"; };
+		8E6029231A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDCustomFederatedAccountLinkingViewController.h; sourceTree = "<group>"; };
+		8E6029241A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDCustomFederatedAccountLinkingViewController.m; sourceTree = "<group>"; };
+		8E6029251A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKDCustomFederatedAccountLinkingViewController.xib; sourceTree = "<group>"; };
+		8E6029261A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDCustomLegacyAccountLinkingViewController.h; sourceTree = "<group>"; };
+		8E6029271A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDCustomLegacyAccountLinkingViewController.m; sourceTree = "<group>"; };
+		8E6029281A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKDCustomLegacyAccountLinkingViewController.xib; sourceTree = "<group>"; };
 		8EFBEB321922F694009E4906 /* GitkitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitkitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFBEB351922F694009E4906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EFBEB371922F694009E4906 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,7 +76,6 @@
 		8EFBEB4A1922F694009E4906 /* GKDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKDViewController.h; sourceTree = "<group>"; };
 		8EFBEB4B1922F694009E4906 /* GKDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKDViewController.m; sourceTree = "<group>"; };
 		8EFBEB4D1922F694009E4906 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8EFBEB541922F694009E4906 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8EFBEB741922F928009E4906 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		8EFBEB761922F92D009E4906 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8EFBEB781922F937009E4906 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -123,7 +147,6 @@
 				8EFBEB351922F694009E4906 /* Foundation.framework */,
 				8EFBEB371922F694009E4906 /* CoreGraphics.framework */,
 				8EFBEB391922F694009E4906 /* UIKit.framework */,
-				8EFBEB541922F694009E4906 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +159,21 @@
 				8EFBEB471922F694009E4906 /* Main.storyboard */,
 				8EFBEB4A1922F694009E4906 /* GKDViewController.h */,
 				8EFBEB4B1922F694009E4906 /* GKDViewController.m */,
+				8E6029231A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.h */,
+				8E6029241A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.m */,
+				8E6029251A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.xib */,
+				8E6029261A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.h */,
+				8E6029271A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.m */,
+				8E6029281A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.xib */,
+				8E6029001A2559890027D141 /* GKDCustomLegacySignInViewController.h */,
+				8E6029011A2559890027D141 /* GKDCustomLegacySignInViewController.m */,
+				8E6029021A2559890027D141 /* GKDCustomLegacySignInViewController.xib */,
+				8E6028FB1A2555910027D141 /* GKDCustomLegacySignUpViewController.h */,
+				8E6028FC1A2555910027D141 /* GKDCustomLegacySignUpViewController.m */,
+				8E6028FD1A2555910027D141 /* GKDCustomLegacySignUpViewController.xib */,
+				8E6028F61A2548C90027D141 /* GKDCustomNascarViewController.h */,
+				8E6028F71A2548C90027D141 /* GKDCustomNascarViewController.m */,
+				8E6028F81A2548C90027D141 /* GKDCustomNascarViewController.xib */,
 				8EFBEB4D1922F694009E4906 /* Images.xcassets */,
 				8EFBEB3C1922F694009E4906 /* Supporting Files */,
 			);
@@ -182,11 +220,6 @@
 				CLASSPREFIX = GKD;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Google Inc.";
-				TargetAttributes = {
-					8EFBEB311922F694009E4906 = {
-						DevelopmentTeam = SSWP7MZS7L;
-					};
-				};
 			};
 			buildConfigurationList = 8EFBEB2D1922F694009E4906 /* Build configuration list for PBXProject "GitkitDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -211,10 +244,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6028FF1A2555910027D141 /* GKDCustomLegacySignUpViewController.xib in Resources */,
 				8EFBEB4E1922F694009E4906 /* Images.xcassets in Resources */,
 				8E0089351979FA6000ACEC1D /* GooglePlus.bundle in Resources */,
 				8E0089321979FA6000ACEC1D /* GITkit.bundle in Resources */,
 				8EFBEB401922F694009E4906 /* InfoPlist.strings in Resources */,
+				8E6029041A2559890027D141 /* GKDCustomLegacySignInViewController.xib in Resources */,
+				8E6028FA1A2548C90027D141 /* GKDCustomNascarViewController.xib in Resources */,
+				8E60292A1A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.xib in Resources */,
+				8E60292C1A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.xib in Resources */,
 				8EFBEB491922F694009E4906 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,9 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6028FE1A2555910027D141 /* GKDCustomLegacySignUpViewController.m in Sources */,
+				8E6029031A2559890027D141 /* GKDCustomLegacySignInViewController.m in Sources */,
 				8EFBEB4C1922F694009E4906 /* GKDViewController.m in Sources */,
 				8EFBEB421922F694009E4906 /* main.m in Sources */,
+				8E6028F91A2548C90027D141 /* GKDCustomNascarViewController.m in Sources */,
 				8EFBEB461922F694009E4906 /* GKDAppDelegate.m in Sources */,
+				8E60292B1A267FC20027D141 /* GKDCustomLegacyAccountLinkingViewController.m in Sources */,
+				8E6029291A267FC20027D141 /* GKDCustomFederatedAccountLinkingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
