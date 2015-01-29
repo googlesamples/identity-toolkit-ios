@@ -30,7 +30,7 @@
   GITClient *gitkitClient = [GITClient sharedInstance];
   gitkitClient.apiKey = @"GITKIT_API_KEY";
   gitkitClient.widgetURL = @"GITKIT_WIDGET_URL";
-  gitkitClient.providers = @[ kGITProviderGoogle, kGITProviderYahoo ];
+  gitkitClient.providers = @[ kGITProviderGoogle ];
   [GPPSignIn sharedInstance].clientID = @"GOOGLE_CLIENT_ID";
   return YES;
 }
