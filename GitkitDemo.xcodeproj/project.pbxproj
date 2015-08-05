@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E0089321979FA6000ACEC1D /* GITkit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E00892D1979FA6000ACEC1D /* GITkit.bundle */; };
-		8E0089331979FA6000ACEC1D /* GITkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E00892E1979FA6000ACEC1D /* GITkit.framework */; };
-		8E0089341979FA6000ACEC1D /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E00892F1979FA6000ACEC1D /* GoogleOpenSource.framework */; };
-		8E0089351979FA6000ACEC1D /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E0089301979FA6000ACEC1D /* GooglePlus.bundle */; };
-		8E0089361979FA6000ACEC1D /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0089311979FA6000ACEC1D /* GooglePlus.framework */; };
 		8E6028F91A2548C90027D141 /* GKDCustomNascarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6028F71A2548C90027D141 /* GKDCustomNascarViewController.m */; };
 		8E6028FA1A2548C90027D141 /* GKDCustomNascarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6028F81A2548C90027D141 /* GKDCustomNascarViewController.xib */; };
 		8E6028FE1A2555910027D141 /* GKDCustomLegacySignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6028FC1A2555910027D141 /* GKDCustomLegacySignUpViewController.m */; };
@@ -39,14 +34,12 @@
 		8EFBEB7F1922F94D009E4906 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFBEB7E1922F94D009E4906 /* MediaPlayer.framework */; };
 		8EFBEB811922F953009E4906 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFBEB801922F953009E4906 /* Security.framework */; };
 		8EFBEB831922F95A009E4906 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFBEB821922F95A009E4906 /* SystemConfiguration.framework */; };
+		E6ADAB2D155E39389EB0EF45 /* libPods-GitkitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E397FF46AAFE5000F17C39C /* libPods-GitkitDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E00892D1979FA6000ACEC1D /* GITkit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GITkit.bundle; path = GitkitDemo/External/GITkit.bundle; sourceTree = "<group>"; };
-		8E00892E1979FA6000ACEC1D /* GITkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GITkit.framework; path = GitkitDemo/External/GITkit.framework; sourceTree = "<group>"; };
-		8E00892F1979FA6000ACEC1D /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = GitkitDemo/External/GoogleOpenSource.framework; sourceTree = "<group>"; };
-		8E0089301979FA6000ACEC1D /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = GitkitDemo/External/GooglePlus.bundle; sourceTree = "<group>"; };
-		8E0089311979FA6000ACEC1D /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = GitkitDemo/External/GooglePlus.framework; sourceTree = "<group>"; };
+		3F1C2871A86477706942F715 /* Pods-GitkitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitkitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitkitDemo/Pods-GitkitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5F0C8125E8D07E96CB659743 /* Pods-GitkitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitkitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitkitDemo/Pods-GitkitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8E6028F61A2548C90027D141 /* GKDCustomNascarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDCustomNascarViewController.h; sourceTree = "<group>"; };
 		8E6028F71A2548C90027D141 /* GKDCustomNascarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDCustomNascarViewController.m; sourceTree = "<group>"; };
 		8E6028F81A2548C90027D141 /* GKDCustomNascarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKDCustomNascarViewController.xib; sourceTree = "<group>"; };
@@ -84,6 +77,7 @@
 		8EFBEB7E1922F94D009E4906 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8EFBEB801922F953009E4906 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8EFBEB821922F95A009E4906 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9E397FF46AAFE5000F17C39C /* libPods-GitkitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitkitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,18 +87,16 @@
 			files = (
 				8EFBEB831922F95A009E4906 /* SystemConfiguration.framework in Frameworks */,
 				8EFBEB811922F953009E4906 /* Security.framework in Frameworks */,
-				8E0089341979FA6000ACEC1D /* GoogleOpenSource.framework in Frameworks */,
 				8EFBEB7F1922F94D009E4906 /* MediaPlayer.framework in Frameworks */,
 				8EFBEB7D1922F948009E4906 /* CoreText.framework in Frameworks */,
 				8EFBEB381922F694009E4906 /* CoreGraphics.framework in Frameworks */,
 				8EFBEB7B1922F93D009E4906 /* CoreMotion.framework in Frameworks */,
 				8EFBEB791922F937009E4906 /* CoreLocation.framework in Frameworks */,
 				8EFBEB771922F92D009E4906 /* AssetsLibrary.framework in Frameworks */,
-				8E0089361979FA6000ACEC1D /* GooglePlus.framework in Frameworks */,
-				8E0089331979FA6000ACEC1D /* GITkit.framework in Frameworks */,
 				8EFBEB751922F928009E4906 /* AddressBook.framework in Frameworks */,
 				8EFBEB3A1922F694009E4906 /* UIKit.framework in Frameworks */,
 				8EFBEB361922F694009E4906 /* Foundation.framework in Frameworks */,
+				E6ADAB2D155E39389EB0EF45 /* libPods-GitkitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +109,7 @@
 				8EFBEB3B1922F694009E4906 /* GitkitDemo */,
 				8EFBEB341922F694009E4906 /* Frameworks */,
 				8EFBEB331922F694009E4906 /* Products */,
+				A2E8E03938842D54A1E395DF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,11 +124,6 @@
 		8EFBEB341922F694009E4906 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8E00892D1979FA6000ACEC1D /* GITkit.bundle */,
-				8E00892E1979FA6000ACEC1D /* GITkit.framework */,
-				8E00892F1979FA6000ACEC1D /* GoogleOpenSource.framework */,
-				8E0089301979FA6000ACEC1D /* GooglePlus.bundle */,
-				8E0089311979FA6000ACEC1D /* GooglePlus.framework */,
 				8EFBEB821922F95A009E4906 /* SystemConfiguration.framework */,
 				8EFBEB801922F953009E4906 /* Security.framework */,
 				8EFBEB7E1922F94D009E4906 /* MediaPlayer.framework */,
@@ -147,6 +135,7 @@
 				8EFBEB351922F694009E4906 /* Foundation.framework */,
 				8EFBEB371922F694009E4906 /* CoreGraphics.framework */,
 				8EFBEB391922F694009E4906 /* UIKit.framework */,
+				9E397FF46AAFE5000F17C39C /* libPods-GitkitDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,6 +180,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A2E8E03938842D54A1E395DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F0C8125E8D07E96CB659743 /* Pods-GitkitDemo.debug.xcconfig */,
+				3F1C2871A86477706942F715 /* Pods-GitkitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EFBEB641922F694009E4906 /* Build configuration list for PBXNativeTarget "GitkitDemo" */;
 			buildPhases = (
+				15CFF9D18F81ABDCF47DAE13 /* Check Pods Manifest.lock */,
 				8EFBEB2E1922F694009E4906 /* Sources */,
 				8EFBEB2F1922F694009E4906 /* Frameworks */,
 				8EFBEB301922F694009E4906 /* Resources */,
+				3A83BEFA2900673B33D0C253 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,8 +246,6 @@
 			files = (
 				8E6028FF1A2555910027D141 /* GKDCustomLegacySignUpViewController.xib in Resources */,
 				8EFBEB4E1922F694009E4906 /* Images.xcassets in Resources */,
-				8E0089351979FA6000ACEC1D /* GooglePlus.bundle in Resources */,
-				8E0089321979FA6000ACEC1D /* GITkit.bundle in Resources */,
 				8EFBEB401922F694009E4906 /* InfoPlist.strings in Resources */,
 				8E6029041A2559890027D141 /* GKDCustomLegacySignInViewController.xib in Resources */,
 				8E6028FA1A2548C90027D141 /* GKDCustomNascarViewController.xib in Resources */,
@@ -258,6 +256,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15CFF9D18F81ABDCF47DAE13 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A83BEFA2900673B33D0C253 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitkitDemo/Pods-GitkitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EFBEB2E1922F694009E4906 /* Sources */ = {
@@ -369,19 +400,15 @@
 		};
 		8EFBEB651922F694009E4906 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F0C8125E8D07E96CB659743 /* Pods-GitkitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GitkitDemo/External",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GitkitDemo/GitkitDemo-Prefix.pch";
 				INFOPLIST_FILE = "GitkitDemo/GitkitDemo-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -390,19 +417,15 @@
 		};
 		8EFBEB661922F694009E4906 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1C2871A86477706942F715 /* Pods-GitkitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GitkitDemo/External",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GitkitDemo/GitkitDemo-Prefix.pch";
 				INFOPLIST_FILE = "GitkitDemo/GitkitDemo-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

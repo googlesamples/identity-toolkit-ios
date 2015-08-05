@@ -19,8 +19,8 @@
 
 #import "GKDAppDelegate.h"
 
-#import <GITkit/GITkit.h>
-#import <GooglePlus/GooglePlus.h>
+#import "GITkit.h"
+#import "GoogleSignIn.h"
 
 @implementation GKDAppDelegate
 
@@ -31,7 +31,7 @@
   gitkitClient.apiKey = @"GITKIT_API_KEY";
   gitkitClient.widgetURL = @"GITKIT_WIDGET_URL";
   gitkitClient.providers = @[ kGITProviderGoogle, kGITProviderYahoo ];
-  [GPPSignIn sharedInstance].clientID = @"GOOGLE_CLIENT_ID";
+  [GIDSignIn sharedInstance].clientID = @"GOOGLE_CLIENT_ID";
   return YES;
 }
 

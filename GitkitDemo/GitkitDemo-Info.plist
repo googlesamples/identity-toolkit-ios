@@ -29,7 +29,8 @@
 			<string>google</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.google.GitkitDemo</string>
+				<string>com.google.gitkitdemo</string>
+				<string>com.googleusercontent.apps.IOS_CLIENT_ID_PREFIX</string>
 			</array>
 		</dict>
 		<dict>
@@ -39,14 +40,12 @@
 			<string>gitkit</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.1234567890</string>
+				<string>com.googleusercontent.apps.SERVER_CLIENT_ID_PREFIX</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>FacebookAppID</key>
-	<string>1424519847774337</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>

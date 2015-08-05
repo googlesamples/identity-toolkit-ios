@@ -19,7 +19,7 @@
 
 #import "GKDCustomNascarViewController.h"
 
-#import <GITkit/GITkit.h>
+#import "GITkit.h"
 
 @interface GKDCustomNascarViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
