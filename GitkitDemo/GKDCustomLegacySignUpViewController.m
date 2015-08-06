@@ -19,7 +19,7 @@
 
 #import "GKDCustomLegacySignUpViewController.h"
 
-#import <GITkit/GITkit.h>
+#import "GITkit.h"
 
 @interface GKDCustomLegacySignUpViewController ()
 @property (copy, nonatomic) NSString *email;

@@ -19,7 +19,7 @@
 
 #import "GKDCustomFederatedAccountLinkingViewController.h"
 
-#import <GITkit/GITkit.h>
+#import "GITkit.h"
 
 @interface GKDCustomFederatedAccountLinkingViewController ()
 @property (copy, nonatomic) NSString *unverifiedProvider;

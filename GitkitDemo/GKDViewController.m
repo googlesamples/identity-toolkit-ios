@@ -19,7 +19,7 @@
 
 #import "GKDViewController.h"
 
-#import <GITkit/GITkit.h>
+#import "GITkit.h"
 
 #import "GKDCustomFederatedAccountLinkingViewController.h"
 #import "GKDCustomLegacySignInViewController.h"
